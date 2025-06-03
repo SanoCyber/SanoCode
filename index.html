@@ -1,0 +1,287 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>SanoCode – Secure, Modern Web Design for Small Business</title>
+  <meta name="description" content="Websites designed and built by a cyber security student in the UK. Fast, secure, and tailored for small businesses that care about online safety and results.">
+  <meta name="keywords" content="web design, cybersecurity, small business websites, secure websites, UK web designer, SanoCode, SanoCyber, freelance web developer">
+  <meta name="author" content="SanoCode">
+
+  <!-- Social Sharing/Open Graph -->
+  <meta property="og:title" content="SanoCode – Secure, Modern Web Design">
+  <meta property="og:description" content="Websites designed by a cyber security student, focused on speed, style, and real-world security.">
+  <meta property="og:image" content="https://www.sanocode.co.uk/images/your-logo.png">
+  <meta property="og:url" content="https://www.sanocode.co.uk/">
+  <meta name="twitter:card" content="summary_large_image">
+
+  <script src="https://cdn.tailwindcss.com"></script>
+  <style>
+    .fade-in {
+      opacity: 0;
+      transform: translateY(30px);
+      transition: opacity 0.8s, transform 0.8s;
+    }
+    .fade-in.visible {
+      opacity: 1;
+      transform: none;
+    }
+  </style>
+</head>
+<body class="bg-[#0c1624] text-white font-sans antialiased">
+  <!-- Header -->
+  <header id="navbar" class="bg-[#17223b] bg-opacity-90 shadow-lg fixed top-0 w-full z-50 transition-all">
+    <div class="max-w-7xl mx-auto flex justify-between items-center p-4">
+      <a href="index.html" class="text-2xl font-black text-cyan-400 hover:text-cyan-300 transition cursor-pointer">
+      Sano<span class="text-white">Code</span></a>
+      <nav class="space-x-6 font-semibold hidden md:inline">
+        <a href="#services" class="hover:text-cyan-400">Services</a>
+        <a href="#portfolio" class="hover:text-cyan-400">Portfolio</a>
+        <a href="#about" class="hover:text-cyan-400">About</a>
+        <a href="pricing.html" class="hover:text-cyan-400">Pricing</a>
+        <a href="blog.html" class="hover:text-cyan-400 underline underline-offset-2">Blog</a>
+        <a href="#contact" class="bg-cyan-400 text-[#0c1624] px-5 py-2 rounded-lg font-bold shadow hover:bg-cyan-300 transition">Contact</a>
+      </nav>
+
+      <button id="mobile-menu-btn" class="md:hidden flex items-center text-cyan-400 text-3xl focus:outline-none">&#9776;</button>
+    </div>
+    <!-- Mobile Nav -->
+    <div id="mobile-menu" class="hidden md:hidden flex flex-col items-center bg-[#17223b] w-full pb-4">
+      <a href="#services" class="block py-2 hover:text-cyan-400">Services</a>
+      <a href="#portfolio" class="block py-2 hover:text-cyan-400">Portfolio</a>
+      <a href="#about" class="block py-2 hover:text-cyan-400">About</a>
+      <a href="pricing.html" class="block py-2 hover:text-cyan-400">Pricing</a>
+      <a href="#contact" class="block py-2 bg-cyan-400 text-[#0c1624] px-5 py-2 rounded-lg font-bold shadow hover:bg-cyan-300 transition">Contact</a>
+    </div>
+  </header>
+
+  <main class="pt-28">
+    <!-- Hero -->
+    <section class="flex flex-col-reverse md:flex-row items-center justify-center py-20 px-4 bg-gradient-to-br from-[#17223b] via-[#122e55] to-[#0c1624] fade-in">
+      <!-- Left: Hero Text -->
+      <div class="w-full md:w-1/2 flex flex-col items-center md:items-start text-center md:text-left max-w-xl">
+        <h1 class="text-5xl md:text-6xl font-extrabold mb-6 text-cyan-400 drop-shadow">
+          Websites Designed With Security In Mind.
+        </h1>
+        <p class="text-xl text-cyan-100 mb-8">
+          Built by a UK-based cyber security student, every site blends style, performance, and up-to-date protection—so your business stands out and stays safe.
+        </p>
+        <a href="#contact" class="bg-cyan-400 text-[#0c1624] text-lg px-10 py-4 rounded-xl font-bold shadow-xl hover:bg-cyan-300 transition">Get Started</a>
+      </div>
+      <!-- Right: Hero Image -->
+      <div class="w-full md:w-1/2 flex justify-center items-center mb-8 md:mb-0">
+        <img src="images/coding.png" alt="Developer coding at laptop"
+          class="rounded-2xl shadow-lg w-11/12 max-w-xl border border-cyan-800 object-cover">
+
+      </div>
+    </section>
+
+    <!-- Services -->
+    <section id="services" class="max-w-5xl mx-auto py-20 px-4 fade-in">
+      <h2 class="text-3xl font-black mb-12 text-cyan-300 text-center">Services</h2>
+      <div class="grid md:grid-cols-3 gap-8">
+        <div class="bg-[#122e55] bg-opacity-90 p-8 rounded-xl shadow-lg border border-cyan-900 hover:scale-105 transition-all">
+          <h3 class="text-xl font-bold mb-2 text-white">Web Design</h3>
+          <p class="text-cyan-100">Modern, responsive websites built for clarity and easy updates.</p>
+        </div>
+        <div class="bg-[#122e55] bg-opacity-90 p-8 rounded-xl shadow-lg border border-cyan-900 hover:scale-105 transition-all">
+          <h3 class="text-xl font-bold mb-2 text-white">Web Security</h3>
+          <p class="text-cyan-100">Security-first builds, HTTPS, updates & best practices baked in.</p>
+        </div>
+        <div class="bg-[#122e55] bg-opacity-90 p-8 rounded-xl shadow-lg border border-cyan-900 hover:scale-105 transition-all">
+          <h3 class="text-xl font-bold mb-2 text-white">Maintenance</h3>
+          <p class="text-cyan-100">Ongoing support and tweaks, no tech headaches for you.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Portfolio Carousel -->
+    <section id="portfolio" class="py-20 px-4 bg-gradient-to-br from-[#0c1624] via-[#122e55] to-[#122341] fade-in">
+      <h2 class="text-3xl font-black mb-12 text-cyan-300 text-center">Recent Projects</h2>
+      <div class="w-full flex flex-col items-center">
+        <!-- Carousel Wrapper with fixed width -->
+        <div id="carousel" class="overflow-hidden rounded-xl shadow-2xl w-full max-w-xl mx-auto relative">
+          <div id="carousel-inner" class="flex transition-transform duration-700 w-full">
+            <!-- Project 1: SanoCyber Screenshot -->
+            <div class="w-full flex-shrink-0 p-6 bg-[#17223b] border border-cyan-900 rounded-xl flex flex-col justify-center items-center">
+              <h4 class="font-bold mb-2 text-cyan-200">SanoCyber Website</h4>
+              <img src="images/SanoCyber_Screenshot.jpg"
+                   alt="SanoCyber Website Screenshot"
+                   class="rounded mb-2 border border-cyan-900 w-96 h-60 object-cover cursor-pointer transition hover:scale-105"
+                   onclick="openLightbox(this.src, this.alt)" />
+              <p class="text-cyan-100 text-sm">
+                A modern cybersecurity hub built by a dedicated cyber security student. SanoCyber offers free security tools, phishing and password checkers, and real-world advice, empowering users and small businesses to stay safe online, with security and privacy at the core.
+              </p>
+              <a href="https://www.sanocyber.com" target="_blank" rel="noopener" class="text-cyan-400 underline hover:text-cyan-300 transition text-sm mt-2">Visit SanoCyber Website</a>
+            </div>
+            <!-- Project 2 -->
+            <div class="w-full flex-shrink-0 p-6 bg-[#17223b] border border-cyan-900 rounded-xl flex flex-col justify-center items-center">
+              <h4 class="font-bold mb-2 text-cyan-200">Peganina Charters</h4>
+              <img src="images/peganina_Screenshot.jpg"
+                   alt="SanoCyber Website Screenshot"
+                   class="rounded mb-2 border border-cyan-900 w-96 h-60 object-cover cursor-pointer transition hover:scale-105"
+                   onclick="openLightbox(this.src, this.alt)" />
+              <p class="text-cyan-100 text-sm">A fresh, modern website redesign for Peganina Charters, based in Mevagissey, Cornwall. The new site gives the business a clean, approachable look, allowing the owner to showcase fishing trips, share updates, and attract more bookings, all with an easy-to-manage layout.</p>
+            </div>
+            <!-- Project 3 -->
+            <div class="w-full flex-shrink-0 p-6 bg-[#17223b] border border-cyan-900 rounded-xl flex flex-col justify-center items-center">
+              <h4 class="font-bold mb-2 text-cyan-200">Sample Portfolio 3</h4>
+              <div class="rounded mb-2 bg-[#0c1624] h-60 w-96 flex items-center justify-center border border-cyan-900">
+                <span class="text-cyan-900">Even more coming soon!</span>
+              </div>
+              <p class="text-cyan-100 text-sm">Showcase as many projects as you want.</p>
+            </div>
+          </div>
+          <!-- Carousel Controls -->
+          <button id="carousel-prev" class="absolute left-0 top-1/2 -translate-y-1/2 bg-cyan-400 text-[#0c1624] p-3 rounded-full shadow-lg hover:bg-cyan-300 transition -ml-8 z-10">&#8592;</button>
+          <button id="carousel-next" class="absolute right-0 top-1/2 -translate-y-1/2 bg-cyan-400 text-[#0c1624] p-3 rounded-full shadow-lg hover:bg-cyan-300 transition -mr-8 z-10">&#8594;</button>
+        </div>
+      </div>
+    </section>
+
+    <!-- Lightbox Modal -->
+    <div id="lightbox" class="fixed inset-0 bg-black bg-opacity-80 flex items-center justify-center z-50 hidden">
+      <img id="lightbox-img" src="" alt="Full preview" class="max-w-full max-h-[80vh] rounded-lg border-4 border-cyan-400 shadow-2xl">
+      <button onclick="closeLightbox()" class="absolute top-6 right-10 text-cyan-400 text-4xl font-bold">&times;</button>
+    </div>
+
+    <!-- About -->
+    <section id="about" class="max-w-3xl mx-auto py-20 px-4 fade-in">
+      <h2 class="text-3xl font-black mb-6 text-cyan-300 text-center">About SanoCode</h2>
+      <p class="text-cyan-100 text-lg text-center">
+        SanoCode is a solo web studio based in the UK, building secure, modern, and approachable websites for small businesses. Personal service, cyber-strong results with no agency bloat, just what you need.
+      </p>
+    </section>
+
+    <!-- Contact -->
+    <section id="contact" class="py-20 px-4 bg-gradient-to-br from-[#122e55] via-[#122341] to-[#0c1624] fade-in">
+      <h2 class="text-3xl font-black mb-6 text-cyan-300 text-center">Contact</h2>
+      <form
+        action="https://formspree.io/f/xovwayay"
+        method="POST"
+        class="max-w-md mx-auto flex flex-col gap-4 bg-[#17223b] rounded-xl p-8 shadow-xl border border-cyan-900"
+        id="contact-form"
+      >
+        <input
+          type="text"
+          name="name"
+          placeholder="Name"
+          required
+          class="p-3 rounded bg-[#0c1624] border border-cyan-900 text-white focus:ring-2 focus:ring-cyan-400"
+        />
+        <input
+          type="email"
+          name="email"
+          placeholder="Email"
+          required
+          class="p-3 rounded bg-[#0c1624] border border-cyan-900 text-white focus:ring-2 focus:ring-cyan-400"
+        />
+        <textarea
+          name="message"
+          placeholder="How can I help you?"
+          rows="4"
+          required
+          class="p-3 rounded bg-[#0c1624] border border-cyan-900 text-white focus:ring-2 focus:ring-cyan-400"
+        ></textarea>
+        <button
+          class="bg-cyan-400 py-3 rounded-xl font-bold text-[#0c1624] hover:bg-cyan-300 transition"
+          type="submit"
+        >Send Message</button>
+        <p id="form-success" class="hidden text-green-400 text-center mt-2 font-semibold">Thank you! Your message was sent.</p>
+      </form>
+      <script>
+        // Optional: show thank you without leaving the page (for Formspree)
+        document.getElementById('contact-form').addEventListener('submit', async function(e) {
+          e.preventDefault();
+          const form = e.target;
+          const data = new FormData(form);
+          const resp = await fetch(form.action, {
+            method: form.method,
+            body: data,
+            headers: { 'Accept': 'application/json' }
+          });
+          if (resp.ok) {
+            form.reset();
+            document.getElementById('form-success').classList.remove('hidden');
+          } else {
+            alert("Oops! There was a problem. Please try again.");
+          }
+        });
+      </script>
+    </section>
+  </main>
+
+  <footer class="bg-gray-900 text-gray-300 py-6 mt-12">
+    <div class="max-w-4xl mx-auto flex flex-col sm:flex-row justify-between items-center px-4">
+      <div class="mb-2 sm:mb-0">
+        &copy; 2025 SanoCode. All rights reserved.
+      </div>
+      <div class="flex gap-4 text-sm">
+        <a href="privacy-policy.html" class="hover:underline">Privacy Policy</a>
+        <span>|</span>
+        <a href="terms.html" class="hover:underline">Terms of Use</a>
+      </div>
+    </div>
+  </footer>
+
+<!-- JavaScript for Fade-in, Mobile Menu, Carousel, and Lightbox -->
+  <script>
+    // Fade-in on scroll
+    function onScrollFadeIn() {
+      document.querySelectorAll('.fade-in').forEach(el => {
+        const rect = el.getBoundingClientRect();
+        if (rect.top < window.innerHeight - 50) {
+          el.classList.add('visible');
+        }
+      });
+    }
+    window.addEventListener('scroll', onScrollFadeIn);
+    window.addEventListener('load', onScrollFadeIn);
+
+    // Mobile menu toggle
+    const btn = document.getElementById('mobile-menu-btn');
+    const menu = document.getElementById('mobile-menu');
+    btn.addEventListener('click', () => {
+      menu.classList.toggle('hidden');
+    });
+
+    // Carousel logic for 1 project at a time
+    const carouselInner = document.getElementById('carousel-inner');
+    const projects = carouselInner.children.length;
+    let current = 0;
+
+    function showProject(idx) {
+      carouselInner.style.transform = `translateX(-${idx * 100}%)`;
+    }
+
+    document.getElementById('carousel-prev').onclick = function() {
+      current = (current - 1 + projects) % projects;
+      showProject(current);
+    };
+    document.getElementById('carousel-next').onclick = function() {
+      current = (current + 1) % projects;
+      showProject(current);
+    };
+
+    // Auto-advance every 8 seconds
+    setInterval(() => {
+      current = (current + 1) % projects;
+      showProject(current);
+    }, 8000);
+
+    // Lightbox logic
+    function openLightbox(src, alt) {
+      document.getElementById('lightbox-img').src = src;
+      document.getElementById('lightbox-img').alt = alt;
+      document.getElementById('lightbox').classList.remove('hidden');
+    }
+    function closeLightbox() {
+      document.getElementById('lightbox').classList.add('hidden');
+      document.getElementById('lightbox-img').src = '';
+    }
+    document.getElementById('lightbox').addEventListener('click', function(e) {
+      if (e.target === this) closeLightbox();
+    });
+  </script>
+</body>
+</html>
